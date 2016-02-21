@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
 
   s.source       = { :git => "https://github.com/kyo7701/ZZUtils.git", :tag => "s.version.to_s" }
-
+ s.dependency "Masonry" , "0.6.1" 
 
 
   s.source_files  = "Universal List Logic/*.{h,m}"
