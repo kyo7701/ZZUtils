@@ -166,14 +166,12 @@
 }
 
 - (void)gridViewDidTapItem:(UIGestureRecognizer *)recognizer {
-    NSLog(@"%ld",recognizer.view.tag);
     NSInteger index = recognizer.view.tag - 5000;
     NSInteger row = index/_columns;
     NSInteger columns = index %_columns;
     GridViewIndex gridIndex;
     gridIndex.row = row;
     gridIndex.column = columns;
-    NSLog(@"%ld,%ld",gridIndex.row,gridIndex.column);
     if ([_delegate respondsToSelector:@selector(gridView:didClickItemAtIndex:)]) {
         [_delegate gridView:self didClickItemAtIndex:gridIndex];
     }
