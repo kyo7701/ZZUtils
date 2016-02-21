@@ -7,6 +7,7 @@
 //
 
 #import "LPGridView.h"
+#import "Masonry.h"
 @implementation LPGridView {
     NSInteger       _rows;
     NSInteger       _columns;
